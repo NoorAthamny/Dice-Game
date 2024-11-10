@@ -9,8 +9,9 @@ const Player = ({ player, score, currentScore, isActive, isWinner }) => {
       <p id={`score--${player}`} className="score">
         {score}
       </p>
-      <div id={`current--${player}`} className="current-score">
-        {currentScore}
+      <div id={`current--${player}`} className="current">
+        <p className="current-label">Current</p>
+        <p className="current-score">{currentScore}</p>
       </div>
     </div>
   );
